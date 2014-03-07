@@ -8,7 +8,7 @@ class GooglePlaces
 	private $response = null;
 
 	public $keyword   = null;
-	public $language  = 'en';
+	public $language  = 'fr';
 	public $location  = null;
 	public $output    = 'json';
 	public $name      = null;
@@ -197,7 +197,7 @@ class GooglePlaces
 		$options = array(
 			CURLOPT_URL            => $url . '?' . $querystring,
 			CURLOPT_HEADER         => false,
-			CURLOPT_SSL_VERIFYPEER => true,
+			CURLOPT_SSL_VERIFYPEER => false,
 			CURLOPT_RETURNTRANSFER => true,
 		);
 
